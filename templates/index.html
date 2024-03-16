@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface d'exploitation des données</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+    <style>
+        body {
+            background-color: #151b25; /* Fond sombre */
+            font-family: 'Poppins', sans-serif; /* Police Poppins */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #b5c5e0; 
+            font-weight: 400;
+        }
+        .heading {
+            margin-top: 60px;
+        }
+        form {
+            margin-top: 50px;
+            display: inline-block;
+            border-radius: 20px;
+            background-color: #212d40; 
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(6, 4, 29, 0.1);
+        }
+        label {
+            font-size: 18px;
+            color: #dddddd; 
+        }
+        textarea {
+            width: calc(100% - 22px); 
+            padding: 10px;
+            border: 1px solid #40506d; 
+            border-radius: 10px;
+            margin-top: 10px;
+            resize: none;
+            background-color: #19212e; 
+            color: #ffffff;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #006466;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #144552; 
+        }
+        .button2 {
+            display: inline-block;
+            width: 250px; 
+            height: 75px; 
+            padding: 15px;
+            margin: 15px;
+            background-color: #00646600;
+            color: #b7c4dc;
+            border: 2px solid #b7c4dc;
+            text-decoration: none;
+            border-radius: 10px;
+            vertical-align: top;
+            transition: background-color 0.3s ease;
+        }
+
+        .button2:hover {
+            background-color: #006466;
+            color: #ffffff;
+            border:2px solid #006466 ;
+        }
+
+        .button {
+            display: inline-block;
+            width: 200px;
+            padding: 15px;
+            margin: 15px;
+            background-color: #006466;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #144552; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Exploitation de données</h1>
+    
+    <form action="/query" method="post">
+        <label for="query" style="color: #dddddd;">Entrez votre requête SQL :</label><br>
+        <textarea id="query" name="query" rows="5" cols="50"></textarea><br>
+        <input type="submit" value="Exécuter">
+    </form>
+
+    <div class="services">
+        <h1 class="heading">Nos Services</h1>
+        <a href="/analyse_tendances_formation" class="button2">Analyse des Tendances de Formation</a>
+        <a href="/analyse_accessibilite" class="button2">Analyse de l'Accessibilité</a>
+        <a href="/analyse_repartition_geographique" class="button2">Analyse de la Répartition Géographique</a>
+        <a href="/evaluation_diversite_apprenants" class="button2">Évaluation de la Diversité des Apprenants</a>
+        <a href="/suivi_mobilite_interdepartementale" class="button2">Suivi de la Mobilité Interdépartementale</a>
+        <a href="/analyse_duree_formations" class="button2">Analyse de la Durée des Formations</a>
+        <a href="/analyse_repartition_formations_annee" class="button2">Analyse de la Répartition des Formations par Année</a>
+        <a href="/analyse_repartition_formations_secteur_activite" class="button2">Analyse de la Répartition des Formations par Secteur d'Activité</a>
+        <a href="/analyse_repartition_diplomes_niveau" class="button2">Analyse de la Répartition des Diplômes par Niveau</a>
+        <a href="/analyse_repartition_diplomes_type" class="button2">Analyse de la Répartition des Diplômes par Type</a>
+    </div>
+</body>
+</html>
